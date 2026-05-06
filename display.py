@@ -80,7 +80,6 @@ def display_cart(cart_items):
     print(f"  Cart Total: Rs.{total:.2f}")
     print(THIN_DIV)
 
-
 def print_success(message):
     print(f"\n  [OK] {message}")
 
