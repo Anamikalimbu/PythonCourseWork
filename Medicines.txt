@@ -1,0 +1,9 @@
+Paracetamol 500mg, Lomus, 1065, 5.0, 45.0, 10
+Cetirizine 10mg, Quest, 716, 4.0, 35.0, 12
+Amoxicillin 500mg, Nepal Remedies, 464, 12.0, 110.0, 15
+Pantoprazole 40mg, Deurali-Janta, 600, 7.0, 60.0, 8
+ORS Sachet, Time Pharma, 288, 20.0, 180.0, 12
+Vitamin C 500mg, Mankind, 876, 5.0, 50.0, 12
+Omeprazole 20mg, Sun Pharma, 720, 8.0, 70.0, 10
+Azithromycin 500mg, Cipla, 400, 15.0, 130.0, 10
+Ibuprofen 400mg, Cipla, 2000, 6.0, 55.0, 10
