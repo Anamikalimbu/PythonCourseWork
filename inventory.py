@@ -72,6 +72,7 @@ def update_stock_after_sale(medicines, index, qty_tablets_sold):
         return False
     medicines[index]["qty_tablets"] -= qty_tablets_sold
     return True
+
 def update_stock_after_restock(medicines, index, qty_tablets_added):
     """
     Increases the stock of a medicine after a restock.
