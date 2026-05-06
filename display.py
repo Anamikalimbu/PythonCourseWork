@@ -3,7 +3,6 @@
 DIVIDER = "=" * 60
 THIN_DIV = "-" * 60
 
-
 def print_header(title):
     print(f"\n{DIVIDER}")
     print(f"  {title}")
