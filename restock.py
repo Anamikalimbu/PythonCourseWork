@@ -8,7 +8,6 @@ from utils import (
     get_yes_no, get_unit_choice, strips_to_tablets
 )
 
-
 def build_restock_list(medicines):
     """
     Interactive loop to build a restock order.
