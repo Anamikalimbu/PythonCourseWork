@@ -18,9 +18,11 @@ def build_cart(medicines):
     cart = []
 
     print("\n  --- Add items to cart. Enter '0' for medicine number to finish. ---")
-
+    first_time = True 
     while True:
-        # display_all_medicines(medicines)
+        if first_time:
+            display_all_medicines(medicines)  
+            first_time = False   
 
         choice = get_valid_int(
             "\n  Enter medicine number to add (0 = done): ",
