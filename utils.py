@@ -94,6 +94,12 @@ def calculate_strip_discount(subtotal, num_strips):
         return round(discount, 2), round(subtotal - discount, 2)
     return 0.0, round(subtotal, 2)
 
+def calculate_tablet_discount(subtotal, num_tablets, threshold=20):
+    """5% discount if customer buys 20 or more tablets."""
+    if num_tablets >= threshold:
+        discount = subtotal * 0.05
+        return round(discount, 2), round(subtotal - discount, 2)
+    return 0.0, round(subtotal, 2)
 
 def tablets_to_strips(qty_tablets, tablets_per_strip):
     """Converts tablets count to number of complete strips."""

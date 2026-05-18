@@ -4,7 +4,7 @@ from display import display_all_medicines, display_search_results, display_cart,
 from inventory import find_medicine, update_stock_after_sale
 from invoice import generate_sales_invoice
 from utils import (
-    get_valid_int, get_valid_string, get_yes_no,
+    calculate_tablet_discount, get_valid_int, get_valid_string, get_yes_no,
     get_unit_choice, calculate_strip_discount,
     strips_to_tablets
 )
@@ -48,10 +48,10 @@ def build_cart(medicines):
                 min_val=1, max_val=max_qty
             )
             subtotal = qty * med["rate_tablet"]
-            discount = 0.0
-            line_total = round(subtotal, 2)
+            discount, line_total = calculate_tablet_discount(subtotal, qty)
             unit_rate = med["rate_tablet"]
-            tablets_sold = qty
+            tablets_sold = strips_to_tablets(qty, med["tablets_strip"])
+
 
         else:  # strip
             max_strips = med["qty_tablets"] // med["tablets_strip"]
