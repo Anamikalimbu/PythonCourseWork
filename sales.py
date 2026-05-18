@@ -20,7 +20,7 @@ def build_cart(medicines):
     print("\n  --- Add items to cart. Enter '0' for medicine number to finish. ---")
 
     while True:
-        display_all_medicines(medicines)
+        # display_all_medicines(medicines)
 
         choice = get_valid_int(
             "\n  Enter medicine number to add (0 = done): ",

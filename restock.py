@@ -19,7 +19,7 @@ def build_restock_list(medicines):
     print("  --- Enter '-1' to ADD A NEW MEDICINE. ---")
 
     while True:
-        display_all_medicines(medicines)
+        # display_all_medicines(medicines)
 
         choice = get_valid_int(
             "\n  Enter medicine number to restock (0 = done, -1 = add new): ",
