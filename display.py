@@ -27,7 +27,7 @@ def print_main_menu():
 
 def display_all_medicines(medicines):
     if not medicines:
-        print("\n  [!] No medicines currently in stock.")
+        print("\n  No medicines currently in stock.")
         return
 
     print_header("Current Medicine Inventory")
@@ -97,7 +97,7 @@ def print_success(message):
     print(f"\n  [OK]  {message}")
 
 def print_error(message):
-    print(f"\n  [ERR] {message}")
+    print(f"\n  [ERROR] {message}")
 
 def print_info(message):
-    print(f"\n  [>>]  {message}")
+    print(f"\n  {message}")

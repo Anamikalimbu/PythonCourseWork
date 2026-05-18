@@ -22,18 +22,18 @@ def get_valid_int(prompt, min_val=None, max_val=None):
     while True:
         raw = input(prompt).strip()
         if not raw:
-            print("  [!] Input cannot be empty. Please try again.")
+            print(" Input cannot be empty. Please try again.")
             continue
         try:
             value = int(raw)
         except ValueError:
-            print(f"  [!] '{raw}' is not a valid integer. Please enter a whole number.")
+            print(f" '{raw}' is not a valid integer. Please enter a whole number.")
             continue
         if min_val is not None and value < min_val:
-            print(f"  [!] Value must be at least {min_val}.")
+            print(f" Value must be at least {min_val}.")
             continue
         if max_val is not None and value > max_val:
-            print(f"  [!] Value must be at most {max_val}.")
+            print(f" Value must be at most {max_val}.")
             continue
         return value
 
@@ -42,15 +42,15 @@ def get_valid_float(prompt, min_val=None):
     while True:
         raw = input(prompt).strip()
         if not raw:
-            print("  [!] Input cannot be empty. Please try again.")
+            print("  Input cannot be empty. Please try again.")
             continue
         try:
             value = float(raw)
         except ValueError:
-            print(f"  [!] '{raw}' is not a valid number.")
+            print(f"'{raw}' is not a valid number.")
             continue
         if min_val is not None and value < min_val:
-            print(f"  [!] Value must be at least {min_val}.")
+            print(f" Value must be at least {min_val}.")
             continue
         return value
 
@@ -59,7 +59,7 @@ def get_valid_string(prompt, min_length=1):
     while True:
         raw = input(prompt).strip()
         if len(raw) < min_length:
-            print(f"  [!] Input must be at least {min_length} character(s). Try again.")
+            print(f" Input must be at least {min_length} character(s). Try again.")
             continue
         return raw
 
@@ -71,7 +71,7 @@ def get_yes_no(prompt):
             return True
         if raw in ("n", "no"):
             return False
-        print("  [!] Please enter 'y' for yes or 'n' for no.")
+        print(" Please enter 'y' for yes or 'n' for no.")
 
 
 def get_unit_choice():
@@ -81,7 +81,7 @@ def get_unit_choice():
             return "tablet"
         if raw == "S":
             return "strip"
-        print("  [!] Invalid choice. Enter T or S.")
+        print(" Invalid choice. Enter T or S.")
 
 
 def calculate_strip_discount(subtotal, num_strips):

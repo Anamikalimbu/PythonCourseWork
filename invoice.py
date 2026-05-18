@@ -139,6 +139,6 @@ def generate_restock_note(supplier_name, restock_items, invoice_id=None):
             f.write(content)
         print(f"\n  [OK] Restock note saved: {filepath}")
     except IOError as e:
-        print(f"\n  [ERR] Could not write restock note: {e}")
+        print(f"\n  [ERROR] Could not write restock note: {e}")
 
     return filepath
