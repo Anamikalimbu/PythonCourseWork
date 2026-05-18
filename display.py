@@ -1,6 +1,6 @@
 # Handles all screen output and menus
 
-W = 120
+W = 100
 DIVIDER  = "=" * W
 THIN_DIV = "-" * W
 
@@ -18,8 +18,8 @@ def print_main_menu():
     print("MedStore Pvt. Ltd.  --  Wholesale Management System".center(W))
     print(DIVIDER)
     print("  [1]  View All Medicines in Stock")
-    print("  [2]  Sell Medicine   (Generate Sales Invoice)")
-    print("  [3]  Restock Medicine  (Generate Restock Note)")
+    print("  [2]  Sell Medicine")
+    print("  [3]  Restock Medicine ")
     print("  [4]  Search Medicine")
     print("  [0]  Exit")
     print(DIVIDER)
